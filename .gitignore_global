@@ -1,10 +1,24 @@
-# Global Gitignore
-# Override by explicitly adding a file with `git add -f file.foo`
+# 🌎 Global Gitignore
+#
+# Set with:
+# > git config --global core.excludesfile '~/.gitignore_global'
+#
+# Override ignores by explicitly adding a file with:
+# > git add --force file.foo
+
+# 🔑 Secrets and creds 🤫
+.env
+.secrets/
+secrets/
+
+# My personal 'hidden' folder convention
+.aj/*
 
 # Temp folders
 tmp/
 
-# Secrets and creds
-.env
-.secrets/
-secrets/
+# VS Code doesn't deal with Java well in the Airbyte project
+*airbyte*/**/bin
+
+# Settings for `pyenv` shouldn't be contageous 🤧
+.python-version
