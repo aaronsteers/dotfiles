@@ -1,0 +1,10 @@
+# Global Gitignore
+# Override by explicitly adding a file with `git add -f file.foo`
+
+# Temp folders
+tmp/
+
+# Secrets and creds
+.env
+.secrets/
+secrets/
